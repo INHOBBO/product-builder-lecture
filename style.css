@@ -232,3 +232,66 @@ h1 {
         padding: 15px 35px; font-size: 18px; width: 100%; justify-content: center;
     }
 }
+
+/* Formspree Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#contact-form input[type="email"],
+#contact-form textarea {
+    padding: 12px;
+    border: 1px solid var(--lotto-row-border);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: var(--lotto-row-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact-form input[type="email"]::placeholder,
+#contact-form textarea::placeholder {
+    color: var(--placeholder-text);
+}
+
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #4285F4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.2);
+}
+
+#contact-form button[type="submit"] {
+    background: linear-gradient(45deg, #FF6B6B, #EE9A49);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+}
+
+#contact-form button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(255, 107, 107, 0.5);
+    background: linear-gradient(45deg, #FF7B7B, #F0A55A);
+}
+
+#contact-form button[type="submit"]:active {
+    transform: translateY(1px) scale(0.99);
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+}
+
+h2 {
+    color: var(--text-color);
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 900;
+    transition: color 0.3s ease;
+}
